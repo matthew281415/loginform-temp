@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0.8),url(./photo2.jpg));
+    /* background-image: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_container{
+    width: 380px;
+    padding: 30px;
+    background-image: linear-gradient(#7579ff,#b224ef);
+    border-radius: 10px;
+}
+
+.font_icon{
+    text-align: center;
+}
+
+.font_icon span{
+   width: 70px;
+   height: 70px;
+   background-color: #ffff;
+   border-radius: 50%;
+   display: inline-block;
+   font-size: 25px;
+   line-height: 70px;
+}
+
+.font_icon span i{
+    transition: all 0.2s linear 0s;
+
+}
+.font_icon span:hover i{
+    color: #b224ef;
+    transform: rotate(1turn);
+}
+
+.form_header h3{
+    color: #ffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.form_body{
+    padding: 50px 0px;
+}
+
+
+/* start form body */
+.form_group{
+    width: 100%;
+    margin-bottom: 40px;
+    position: relative;
+}
+.form_controls{
+    width: 100%;
+    padding: 10px 35px;
+    color: #ffff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.45);
+    box-sizing: border-box;
+    transition: all 0.0s linear 0s;
+}
+
+.form_controls:focus{
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255);
+    outline: none;
+
+}
+
+.form_controls::placeholder{
+    color: #ffff;
+}
+
+.form_group label{
+    color: #fff;
+    font-size: 13px;
+}
+
+.form_group span{
+    color: #ffff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s linear 0s;
+}
+
+.form_controls:focus + span{
+    transform: translateY(-120%)scale(0.8);
+}
+
+.form_btn_group{
+    text-align: center;
+}
+.form_btn_group .btn{
+    /* margin:0 auto; */
+    padding: 15px 30px;
+    border: none;
+    color: #000;
+    background-color:#fff;
+    border-radius: 30px;
+
+}
+
+
+.form_footer{
+    text-align: center;
+}
+
+.form_footer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 200;
+}
+
